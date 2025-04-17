@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Load model and encoded data
-with open("C:/Users/vkabd/Downloads/model_and_data.pkl", "rb") as file:
+with open("model_and_data.pkl", "rb") as file:
     data = pickle.load(file)
 
 model = data["model"]
@@ -13,7 +13,7 @@ x = data["x"]
 st.title("🏏 Player Run Class Predictor")
 
 # Upload CSV file for actual batter and team names
-uploaded_file = st.file_uploader("C:/Users/vkabd/Downloads/deliveries.csv/deliveries.csv.zip", type="csv")
+uploaded_file = st.file_uploader("deliveries.csv.zip", type="csv")
 
 if uploaded_file:
     # Read the uploaded CSV
